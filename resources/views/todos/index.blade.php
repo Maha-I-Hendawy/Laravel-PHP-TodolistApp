@@ -8,7 +8,7 @@
    @if(count($todos) > 0)
      <ul>
       @foreach($todos as $todo)
-         <li><a href="/todos/{{$todo->id}}">{{ $todo->todo }}</a> <a href="/todos/{{$todo->id}}/edit">Update</a> <a href="{{ url todos.destroy $todo->id}}">Delete</a></li>
+         <li><a href="/todos/{{$todo->id}}">{{ $todo->todo }}</a> <a href="/todos/{{$todo->id}}/edit">Update</a> <a href="#">Delete</a></li>
       @endforeach
      </ul>
    @else
