@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
 use App\Http\Controllers\TodosController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +22,10 @@ use App\Http\Controllers\TodosController;
 
 */
 
+Route::get('/', 'PagesController@home');
+
+Route::get('/about', 'PagesController@about');
+
+Route::get('/contact', 'PagesController@contact');
 
 Route::resource('/todos', 'TodosController');
